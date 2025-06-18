@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing to Learn Guitar Classes | Laxmi Nagar, Delhi</title>
+    <meta name="description" content="Amazing to Learn offers professional guitar classes in Laxmi Nagar, Delhi. Learn to play guitar with expert instructors, enroll in beginner to advanced courses, and book a free demo class today!">
+    <meta name="keywords" content="guitar classes, learn guitar, Laxmi Nagar, Delhi, music classes, guitar lessons, beginner guitar, advanced guitar, music school, Amazing to learn, Delhi guitar, guitar school Delhi, guitar classes near me, guitar course, music education">
+    <meta name="author" content="Amazing to learn">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.amazingtolearn.com/"> <!-- IMPORTANT: Replace with your actual website domain -->
+
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="Amazing to Learn Guitar Classes | Laxmi Nagar, Delhi">
+    <meta property="og:description" content="Master the guitar with expert instructors at Amazing to Learn in Laxmi Nagar, Delhi. Offering beginner to advanced courses with free demo classes.">
+    <meta property="og:image" content="https://placehold.co/1200x630/000000/ffffff?text=Amazing+to+Learn+Guitar"> <!-- Replace with your actual logo/banner image (grayscale) -->
+    <meta property="og:url" content="https://www.amazingtolearn.com/"> <!-- IMPORTANT: Replace with your actual website domain -->
+    <meta property="og:type" content="EducationalOrganization">
+    <meta property="og:site_name" content="Amazing to Learn">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@amazingtolearn"> <!-- Replace with actual Twitter handle if exists -->
+    <meta name="twitter:title" content="Amazing to Learn Guitar Classes | Laxmi Nagar, Delhi">
+    <meta name="twitter:description" content="Master the guitar with expert instructors at Amazing to Learn in Laxmi Nagar, Delhi. Offering beginner to advanced courses with free demo classes.">
+    <meta name="twitter:image" content="https://placehold.co/1200x675/000000/ffffff?text=Amazing+to+Learn+Guitar"> <!-- Replace with your actual logo/banner image (grayscale) -->
+
+    <!-- Tailwind CSS CDN for modern and responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for clean, readable typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons (e.g., hamburger menu, WhatsApp, social media) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Define CSS Variables for top bar and navbar heights */
+        :root {
+            --top-bar-height-desktop: 50px; /* Approximate height of top bar on desktop */
+            --navbar-height-desktop: 70px;  /* Approximate height of navbar on desktop */
+            --top-bar-height-mobile: 50px; /* Adjusted for better stacking of items on mobile */
+            --navbar-height-mobile: 60px; /* Standard mobile navbar height */
+        }
+
+        /* Custom styles for the Inter font and overall aesthetics */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f0f0; /* Light gray background for a clean grayscale look */
+            color: #333; /* Default text color for black & white theme */
+            overflow-x: hidden; /* Prevent horizontal scrollbars */
+            scroll-behavior: smooth; /* Smooth scrolling for navigation links */
+        }
+        /* Custom scrollbar hiding for a cleaner UI, while maintaining functionality */
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        body {
+            -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+            scrollbar-width: none;  /* For Firefox */
+        }
+        /* Custom animation for elements in the hero section to gracefully fade in */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fadeInDown {
+            animation: fadeInDown 0.8s ease-out forwards;
+        }
+
+        /* Top Bar - Fully Responsive (Adapted from uploaded style.css) */
+        .top-bar {
+            background-color: #1a1a1a; /* Dark background for top bar (B&W) */
+            color: #d0d0d0; /* Light text for contrast */
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9em;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure it's on top */
+            flex-wrap: nowrap;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5); /* Stronger shadow */
+            height: var(--top-bar-height-desktop);
+            transition: height 0.3s ease;
+        }
+
+        .top-bar-left, .top-bar-right {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 1rem;
+            justify-content: flex-start;
+            flex-basis: auto;
+        }
+
+        /* Adjust for smaller screens where the top bar might stack */
+        @media (max-width: 992px) { /* Tablet and below */
+            .top-bar {
+                height: auto;
+                min-height: var(--top-bar-height-mobile);
+                flex-direction: column;
+                padding: 5px 1rem;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+            .top-bar-left, .top-bar-right {
+                width: 100%;
+                justify-content: center;
+                gap: 0.5rem;
+                flex-wrap: wrap;
+            }
+            .top-bar-item {
+                font-size: 0.8rem;
+            }
+            .top-bar-item span {
+                white-space: normal;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) { /* Mobile and below */
+            .top-bar-left, .top-bar-right {
+                flex-direction: row;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+            .top-bar-item {
+                font-size: 0.75rem;
+            }
+            .top-bar-item i {
+                font-size: 0.9rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .top-bar {
+                padding: 5px 0.5rem;
+            }
+            .top-bar-item {
+                font-size: 0.7rem;
+            }
+            .top-bar-item i {
+                font-size: 0.8rem;
+            }
+        }
+
+        .top-bar-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #d0d0d0;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            padding: 5px 0;
+        }
+
+        .top-bar-item:hover {
+            color: #ffffff; /* Brighter white on hover */
+            transform: translateY(-2px);
+        }
+
+        .top-bar-item i {
+            font-size: 1.1rem;
+            min-width: 16px;
+        }
+
+        /* Social Media Colors for Top Bar (Adjusted for B&W theme) */
+        .top-bar-item.instagram i { color: #aaaaaa; } /* Grayed out */
+        .top-bar-item.linkedin i { color: #aaaaaa; }
+        .top-bar-item.facebook i { color: #aaaaaa; }
+        .top-bar-item.youtube i { color: #aaaaaa; }
+        .top-bar-item.twitter i { color: #aaaaaa; }
+        /* Hover effects can make them slightly lighter or change to white */
+        .top-bar-item.instagram:hover i,
+        .top-bar-item.linkedin:hover i,
+        .top-bar-item.facebook:hover i,
+        .top-bar-item.youtube:hover i,
+        .top-bar-item.twitter:hover i {
+            color: #ffffff;
+        }
+
+
+        /* Responsive menu specific styles for hamburger toggle */
+        .mobile-menu {
+            transition: transform 0.3s ease-out; /* Smooth slide-in/out transition */
+            transform: translateX(100%); /* Start completely off-screen to the right */
+        }
+        .mobile-menu.open {
+            transform: translateX(0); /* Slide into view */
+        }
+        .hamburger-icon {
+            display: block; /* Always display on mobile */
+            cursor: pointer;
+            z-index: 50; /* Ensure it's above other elements */
+            font-size: 1.75rem; /* Larger icon for better touch target */
+        }
+        /* On medium screens and up, hide the hamburger icon as desktop nav takes over */
+        @media (min-width: 768px) {
+            .hamburger-icon {
+                display: none;
+            }
+        }
+        /* Floating WhatsApp button styling */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px; /* Distance from bottom */
+            right: 20px; /* Distance from right */
+            z-index: 100; /* Ensure it's on top of all content */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Soft shadow */
+        }
+
+        /* Modal specific styles */
+        .modal-overlay {
+            position: fixed;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            height: 80%;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 200; /* Higher than other elements */
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+        .modal-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            position: relative;
+            max-width: 90%;
+            width: 500px; /* Fixed width for larger screens */
+            transform: translateY(-20px);
+            opacity: 0;
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+            color: #333; /* Text color for modal content */
+        }
+        .modal-overlay.open .modal-content {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .close-modal {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.75rem;
+            color: #333;
+            cursor: pointer;
+            line-height: 1;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem;
+            background-color: #eee;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .close-modal:hover {
+            background-color: #ccc;
+            color: #000;
+        }
+    </style>
+   
+</head>
+<body class="relative">
+    <!-- TOP BAR (New addition from uploaded file, styled for B&W) -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <a href="mailto:amazingtolearn@gmail.com" class="top-bar-item email" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+                <span>amazingtolearn@gmail.com</span>
+            </a>
+        </div>
+        <div class="top-bar-right">
+            <!-- Social Icons for Amazing to Learn -->
+            <a href="https://www.youtube.com/@amazingtolearn" target="_blank" class="top-bar-item youtube" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/amazingtolearn" target="_blank" class="top-bar-item instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/amazingtolearn" target="_blank" class="top-bar-item facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="tel:+919220771187" class="top-bar-item contact" aria-label="Contact Number">
+                <i class="fas fa-phone"></i>
+                <span>+91 92207 71187</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Header and Navigation Bar -->
+    <header class="bg-gradient-to-r from-gray-900 to-black text-white p-4 shadow-xl fixed w-full z-40" style="padding-top: calc(var(--top-bar-height-desktop) + 0.5rem);"> <!-- Adjusted padding-top for top bar -->
+        <div class="container mx-auto flex justify-between items-center px-4 md:px-6 lg:px-8">
+            <a href="#home" class="text-3xl lg:text-4xl font-extrabold rounded-md p-2 hover:bg-gray-200 hover:text-gray-800 transition duration-300 ease-in-out">
+                Amazing to learn
+            </a>
+
+            <!-- Desktop Navigation Links (hidden on mobile) -->
+            <nav class="hidden md:flex space-x-6 lg:space-x-8">
+                <a href="#home" class="hover:text-gray-300 transition duration-300 font-medium text-lg px-3 py-2 rounded-md hover:bg-gray-200 hover:text-gray-800">Home</a>
+                <a href="#about" class="hover:text-gray-300 transition duration-300 font-medium text-lg px-3 py-2 rounded-md hover:bg-gray-200 hover:text-gray-800">About Us</a>
+                <a href="#courses" class="hover:text-gray-300 transition duration-300 font-medium text-lg px-3 py-2 rounded-md hover:bg-gray-200 hover:text-gray-800">Courses</a>
+                <a href="#demo" class="hover:text-gray-300 transition duration-300 font-medium text-lg px-3 py-2 rounded-md hover:bg-gray-200 hover:text-gray-800">Book Free Demo</a>
+                <a href="#contact" class="hover:text-gray-300 transition duration-300 font-medium text-lg px-3 py-2 rounded-md hover:bg-gray-200 hover:text-gray-800">Contact Us</a>
+            </nav>
+
+            <!-- Hamburger Icon for Mobile (visible only on mobile/tablet) -->
+            <div id="hamburger" class="md:hidden hamburger-icon text-white">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-64 bg-gradient-to-br from-gray-900 to-black text-white shadow-xl p-6 md:hidden z-50">
+        <div class="flex justify-end mb-8">
+            <button id="close-menu" class="text-white text-3xl">&times;</button>
+        </div>
+        <nav class="flex flex-col space-y-6">
+            <a href="#home" class="text-2xl font-semibold hover:text-gray-300 transition duration-200" onclick="document.getElementById('mobile-menu').classList.remove('open')">Home</a>
+            <a href="#about" class="text-2xl font-semibold hover:text-gray-300 transition duration-200" onclick="document.getElementById('mobile-menu').classList.remove('open')">About Us</a>
+            <a href="#courses" class="text-2xl font-semibold hover:text-gray-300 transition duration-200" onclick="document.getElementById('mobile-menu').classList.remove('open')">Courses</a>
+            <a href="#demo" class="text-2xl font-semibold hover:text-gray-300 transition duration-200" onclick="document.getElementById('mobile-menu').classList.remove('open')">Book Free Demo</a>
+            <a href="#contact" class="text-2xl font-semibold hover:text-gray-300 transition duration-200" onclick="document.getElementById('mobile-menu').classList.remove('open')">Contact Us</a>
+        </nav>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="pt-32 md:pt-40"> <!-- Adjusted padding top to account for both header and top bar on different screen sizes -->
+
+        <!-- Home Section - Hero Banner -->
+        <section id="home" class="relative bg-gradient-to-br from-gray-700 to-black text-white py-20 md:py-28 lg:py-32 flex items-center justify-center min-h-screen-75">
+            <div class="container mx-auto text-center px-4 animate-fadeInDown">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 drop-shadow-lg">
+                    Unleash Your Inner Guitarist
+                </h1>
+                <p class="text-lg md:text-xl lg:text-2xl mb-10 max-w-3xl mx-auto opacity-90">
+                    Join <span class="font-bold text-gray-300">Amazing to learn</span> for the best guitar classes in Laxmi Nagar, Delhi.
+                    Start your musical journey today!
+                </p>
+                <!-- Book Your Free Demo Button -->
+                <a href="#demo" class="inline-block bg-white text-gray-800 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 hover:scale-105 transition duration-300 ease-in-out text-lg md:text-xl transform">
+                    Book Your Free Demo Class on Call !
+                </a>
+            </div>
+            <!-- Background subtle guitar graphic or pattern (grayscale) -->
+            <div class="absolute inset-0 bg- opacity-10 bg-cover bg-center">
+                <img src="assets/Top.jpeg">
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 md:py-20 bg-white shadow-inner">
+            <div class="container mx-auto px-4 md:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12 relative pb-4">
+                    About <span class="text-gray-900">Amazing to learn</span>
+                    <span class="absolute bottom-0 left-1/2 w-20 h-1 bg-gray-900 transform -translate-x-1/2 rounded-full"></span>
+                </h2>
+                <div class="flex flex-col md:flex-row items-center gap-10 lg:gap-16">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x400/333333/ffffff?text=About+Us" alt="About Amazing to Learn Guitar Classes" class="rounded-lg shadow-xl w-full h-auto object-cover max-h-96">
+                    </div>
+                    <div class="md:w-1/2 text-gray-700 leading-relaxed text-lg">
+                        <p class="mb-6">
+                            Welcome to <strong>Amazing to learn</strong>, your premier destination for high-quality guitar education in Laxmi Nagar, Delhi.
+                            We are passionate about music and dedicated to helping aspiring guitarists of all ages and skill levels achieve their musical dreams.
+                        </p>
+                        <p class="mb-6">
+                            Our experienced and friendly instructors provide personalized attention, ensuring a supportive and engaging learning environment.
+                            We believe that learning guitar should be fun, accessible, and rewarding. Our curriculum is designed to build a strong foundation
+                            in theory, technique, and practical playing, covering various genres.
+                        </p>
+                        <p>
+                            From your first strum to mastering complex solos, we are here to guide you every step of the way. Join our community and discover
+                            the joy of making music!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="py-16 md:py-20 bg-gray-100">
+            <div class="container mx-auto px-4 md:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12 relative pb-4">
+                    Our <span class="text-gray-900">Courses</span>
+                    <span class="absolute bottom-0 left-1/2 w-20 h-1 bg-gray-900 transform -translate-x-1/2 rounded-full"></span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Course Card 1: Beginner -->
+                    <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-8 flex flex-col justify-between border-t-4 border-gray-700">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Beginner Guitar Course</h3>
+                            <p class="text-gray-600 mb-4">
+                                Perfect for absolute beginners with no prior experience. Learn the fundamentals of guitar playing,
+                                basic chords, strumming patterns, and simple songs.
+                            </p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                                <li>Introduction to Guitar & Parts</li>
+                                <li>Basic Chords (Open Position)</li>
+                                <li>Strumming Techniques</li>
+                                <li>Rhythm and Timing</li>
+                                <li>Playing Simple Melodies & Songs</li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <a href="#demo" class="inline-block bg-gray-800 text-white py-2 px-6 rounded-full font-semibold hover:bg-gray-900 transition duration-300 shadow-md">Enroll Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 2: Intermediate -->
+                    <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-8 flex flex-col justify-between border-t-4 border-gray-600">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Intermediate Guitar Course</h3>
+                            <p class="text-gray-600 mb-4">
+                                Build upon your basic skills. Explore barre chords, scales, fingerstyle, and more complex rhythms.
+                                Suitable for those who know basic chords.
+                            </p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                                <li>Barre Chords & Power Chords</li>
+                                <li>Major and Minor Scales</li>
+                                <li>Introduction to Fingerstyle</li>
+                                <li>Music Theory Basics</li>
+                                <li>Playing Intermediate Songs</li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <a href="#demo" class="inline-block bg-gray-700 text-white py-2 px-6 rounded-full font-semibold hover:bg-gray-800 transition duration-300 shadow-md">Enroll Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 3: Advanced -->
+                    <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-8 flex flex-col justify-between border-t-4 border-gray-500">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Advanced Guitar Course</h3>
+                            <p class="text-gray-600 mb-4">
+                                Master advanced techniques, improvisation, music composition, and various genres like blues, jazz, or rock.
+                                For experienced players.
+                            </p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                                <li>Advanced Scales & Arpeggios</li>
+                                <li>Improvisation & Soloing</li>
+                                <li>Jazz/Blues/Rock Techniques</li>
+                                <li>Songwriting & Composition</li>
+                                <li>Performance Preparation</li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <a href="#demo" class="inline-block bg-gray-600 text-white py-2 px-6 rounded-full font-semibold hover:bg-gray-700 transition duration-300 shadow-md">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book Free Demo Section -->
+        <section id="demo" class="py-16 md:py-20 bg-gradient-to-br from-gray-700 to-black text-white text-center">
+            <div class="container mx-auto px-4 md:px-8">
+                <h2 class="text-4xl font-bold mb-6 drop-shadow-lg">
+                    Ready to Start Your Guitar Journey?
+                </h2>
+                <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90">
+                    Book a <span class="font-bold text-gray-300">FREE Demo Class</span> today and experience our unique teaching approach!
+                </p>
+                <!-- Simple form for demo booking -->
+                <div class="bg-white p-8 rounded-lg shadow-xl max-w-lg mx-auto">
+                    <form class="space-y-6 text-left">
+                        <div>
+                            <label for="name" class="block text-gray-800 text-lg font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-600 focus:border-transparent text-gray-800" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-800 text-lg font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john.doe@example.com" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-600 focus:border-transparent text-gray-800" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-800 text-lg font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 92207 71187" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-600 focus:border-transparent text-gray-800" required>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-gray-800 text-white font-bold py-3 px-10 rounded-full shadow-lg hover:bg-black hover:scale-105 transition duration-300 ease-in-out text-lg">
+                                Schedule Demo
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="py-16 md:py-20 bg-white">
+            <div class="container mx-auto px-4 md:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12 relative pb-4">
+                    Get in <span class="text-gray-900">Touch</span>
+                    <span class="absolute bottom-0 left-1/2 w-20 h-1 bg-gray-900 transform -translate-x-1/2 rounded-full"></span>
+                </h2>
+                <div class="flex flex-col md:flex-row gap-10 items-start">
+                    <div class="md:w-1/2 bg-gray-100 p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                        <p class="text-lg text-gray-700 mb-4">
+                            <i class="fas fa-map-marker-alt text-gray-700 mr-3"></i>
+                            <strong>Address:</strong> 8/334, Lalita Park, Laxminagar, New Delhi 110092
+                        </p>
+                        <p class="text-lg text-gray-700 mb-4">
+                            <i class="fas fa-phone-alt text-gray-700 mr-3"></i>
+                            <strong>Phone:</strong> <a href="tel:+91 92207 71187
+                            " class="text-gray-700 hover:underline">+91 92207 71187</a>
+                        </p>
+                        <p class="text-lg text-gray-700 mb-4">
+                            <i class="fas fa-envelope text-gray-700 mr-3"></i>
+                            <strong>Email:</strong> <a href="mailto:amazingtolearn@gmail.com" class="text-gray-700 hover:underline">amazingtolearn@gmail.com</a>
+                        </p>
+                        <p class="text-lg text-gray-700 mb-4">
+                            <i class="fas fa-clock text-gray-700 mr-3"></i>
+                            <strong>Hours:</strong> Mon - Sun: 10:00 AM - 8:00 PM
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 bg-gray-100 p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
+                        <form class="space-y-4">
+                            <form action="https://formsubmit.co/el/tanuma" method="POST" />
+                            <div>
+                                <label for="contact-name" class="sr-only">Name</label>
+                                <input type="text" id="contact-name" name="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-600 text-gray-800" required>
+                            </div>
+                            <div>
+                                <label for="contact-email" class="sr-only">Email</label>
+                                <input type="email" id="contact-email" name="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-600 text-gray-800" required>
+                            </div>
+                            <div>
+                                <label for="contact-message" class="sr-only">Message</label>
+                                <textarea id="contact-message" name="message" rows="5" placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-600 text-gray-800" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="bg-gray-800 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-black transition duration-300 ease-in-out">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Embedded Google Map for Laxmi Nagar (Placeholder - replace with actual embed code) -->
+                <div class="mt-12 rounded-lg overflow-hidden shadow-xl">
+                    <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Find Us on Map</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.281804917524!2d77.27961225!3d28.62921075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb2e2d93e8e7%3A0x6b4c1a5b8e9d9e4a!2sLaxmi%20Nagar%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1678912345678!5m2!1sen!2sin"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Location of Amazing to learn in Laxmi Nagar, Delhi"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <p>&copy; 2024 Amazing to learn. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://www.facebook.com/amazingtolearn" target="_blank" aria-label="Facebook" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                <a href="https://www.instagram.com/amazingtolearn" target="_blank" aria-label="Instagram" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                <a href="https://www.youtube.com/@amazingtolearn" target="_blank" aria-label="YouTube" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-youtube text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/9220771187" target="_blank" class="whatsapp-float bg-gray-800 text-white p-4 rounded-full text-3xl flex items-center justify-center hover:bg-black transition duration-300 ease-in-out transform hover:scale-110">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Pop-up Inquiry Form Modal -->
+    <div id="inquiryModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal" id="closeInquiryModal">&times;</button>
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Inquire About Classes</h3>
+            <p class="text-gray-700 text-center mb-6">
+                Fill out the form below and we'll get back to you shortly!
+            </p>
+            <form class="space-y-4">
+                <div>
+                    <label for="modal-name" class="block text-gray-800 text-lg font-medium mb-2">Your Name</label>
+                    <input type="text" id="modal-name" name="name" placeholder="John Doe" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-600 focus:border-transparent text-gray-800" required>
+                </div>
+                <div>
+                    <label for="modal-email" class="block text-gray-800 text-lg font-medium mb-2">Email Address</label>
+                    <input type="email" id="modal-email" name="email" placeholder="john.doe@example.com" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-600 focus:border-transparent text-gray-800" required>
+                </div>
+                <div>
+                    <label for="modal-phone" class="block text-gray-800 text-lg font-medium mb-2">Phone Number (Optional)</label>
+                    <input type="tel" id="modal-phone" name="phone" placeholder="+91 92207 71187" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-600 focus:border-transparent text-gray-800">
+                </div>
+                <div>
+                    <label for="modal-message" class="block text-gray-800 text-lg font-medium mb-2">Your Inquiry</label>
+                    <textarea id="modal-message" name="message" rows="4" placeholder="I'd like to know more about..." class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-600 focus:border-transparent text-gray-800" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-gray-800 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-black transition duration-300 ease-in-out">
+                        Submit Inquiry
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- JavaScript for Hamburger Menu Toggle, smooth scrolling, and modal -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeMenu = document.getElementById('close-menu');
+            const inquiryModal = document.getElementById('inquiryModal');
+            const closeInquiryModal = document.getElementById('closeInquiryModal');
+            // No need for modalContent constant if not directly manipulating its classes
+
+            // Toggle mobile menu visibility
+            hamburger.addEventListener('click', () => {
+                mobileMenu.classList.add('open');
+            });
+
+            closeMenu.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+            });
+
+            // Close mobile menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('open');
+                });
+            });
+
+            // Smooth scrolling for all internal links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        const topBar = document.querySelector('.top-bar');
+                        const header = document.querySelector('header');
+
+                        const topBarHeight = topBar ? topBar.offsetHeight : 0;
+                        const headerHeight = header ? header.offsetHeight : 0;
+
+                        // Calculate total offset including both fixed bars and a little extra padding
+                        const offset = topBarHeight + headerHeight + 10; // Added 10px for extra padding
+
+                        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                        const offsetPosition = elementPosition - offset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Show inquiry modal on page load
+            // setTimeout can be added here if a delay is desired before the modal pops up
+            inquiryModal.classList.add('open');
+
+
+            // Close inquiry modal when close button is clicked
+            closeInquiryModal.addEventListener('click', () => {
+                inquiryModal.classList.remove('open');
+            });
+
+            // Close inquiry modal when clicking outside the content
+            inquiryModal.addEventListener('click', (e) => {
+                if (e.target === inquiryModal) {
+                    inquiryModal.classList.remove('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

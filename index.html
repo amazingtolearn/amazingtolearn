@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guitar Classes in Laxmi Nagar Delhi | Amazing To Learn</title>
-  <meta name="description" content="Join professional acoustic guitar classes in Laxmi Nagar East Delhi. Beginner to advanced guitar training with free demo class available. Call Now!" />
+  <meta name="description" content="Join guitar classes by Nitin Karan in Laxmi Nagar, East Delhi. Beginner to advanced guitar training, vocal & keyboard. Free demo class available. Call Now!" />
   <meta name="keywords" content="guitar classes in laxmi nagar, guitar classes in delhi, guitar classes near me, acoustic guitar classes delhi, beginner guitar classes east delhi, guitar lessons delhi, guitar teacher laxmi nagar, guitar coaching delhi, guitar institute east delhi, learn guitar delhi, guitar classes preet vihar, guitar classes nirman vihar, guitar classes mayur vihar, guitar classes patparganj, best guitar classes in delhi, affordable guitar classes delhi, guitar classes for beginners delhi, online guitar classes india, guitar classes for kids delhi, guitar tutor near me, music classes laxmi nagar, music academy east delhi, music classes delhi, guitar and vocal classes delhi, keyboard classes laxmi nagar, keyboard classes delhi, vocal training delhi, singing classes delhi, singing classes laxmi nagar, music school delhi, guitar admission delhi, guitar course fees delhi, summer guitar classes delhi, guitar workshop delhi, electric guitar classes delhi, classical guitar delhi, bollywood guitar lessons delhi, amazing to learn guitar" />
   <meta name="robots" content="index, follow" />
   <meta name="geo.region" content="IN-DL" />
@@ -14,14 +14,24 @@
   <meta name="language" content="English" />
   <meta name="revisit-after" content="7 days" />
   <meta name="author" content="Amazing To Learn Guitar Classes" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
   <meta property="og:locale" content="en_IN" />
   <meta property="og:site_name" content="Amazing To Learn Guitar Classes" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Guitar Classes in Laxmi Nagar Delhi | Amazing To Learn" />
-  <meta name="twitter:description" content="Best guitar classes in Laxmi Nagar, East Delhi. Beginner to advanced. Book FREE demo class today! Call +91 94728 28685" />
+  <meta name="twitter:description" content="Guitar classes by Nitin Karan in Laxmi Nagar, East Delhi. Beginner to advanced. FREE demo class! Call +91 94728 28685" />
   <meta property="og:title" content="Guitar Classes in Laxmi Nagar Delhi | Amazing To Learn" />
-  <meta property="og:description" content="Professional guitar classes in Laxmi Nagar, East Delhi. Book your free demo class today!" />
+  <meta property="og:description" content="Guitar classes by Nitin Karan – professional guitar instructor & music producer in Laxmi Nagar, East Delhi. Book your free demo today!" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://amazingtolearn.in/" />
+  <meta property="og:image" content="https://amazingtolearn.in/og-image.jpg" />
+  <meta name="twitter:image" content="https://amazingtolearn.in/og-image.jpg" />
+  <link rel="canonical" href="https://amazingtolearn.in/" />
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//fonts.gstatic.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet" />
@@ -32,7 +42,7 @@
     "@context": "https://schema.org",
     "@type": ["MusicSchool","LocalBusiness","EducationalOrganization"],
     "name": "Amazing To Learn Guitar Classes",
-    "description": "Professional guitar and music classes in Laxmi Nagar, East Delhi",
+    "description": "Professional guitar and music classes by Nitin Karan in Laxmi Nagar, East Delhi. 3+ years experience, 50+ students trained.",
     "url": "https://amazingtolearn.in",
     "telephone": "+91-9472828685",
     "address": {
@@ -48,8 +58,21 @@
       "latitude": 28.6317,
       "longitude": 77.2792
     },
+    "email": "amazingtolearn@gmail.com",
     "openingHours": ["Mo-Sa 07:00-21:00"],
-    "priceRange": "₹₹"
+    "priceRange": "₹₹",
+    "sameAs": [
+      "https://www.instagram.com/amazingtolearn",
+      "https://www.youtube.com/@amazingtolearn",
+      "https://www.facebook.com/amazingtolearn"
+    ],
+    "hasMap": "https://maps.google.com/?q=Amazing+To+Learn+Guitar+Classes+Laxmi+Nagar+East+Delhi",
+    "currenciesAccepted": "INR",
+    "paymentAccepted": "Cash, UPI, Bank Transfer",
+    "areaServed": [
+      "Laxmi Nagar", "Preet Vihar", "Nirman Vihar",
+      "Mayur Vihar", "Patparganj", "East Delhi", "Delhi"
+    ]
   }
   </script>
 
@@ -92,8 +115,15 @@
     ::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 3px; }
 
     /* ── PAGES ── */
-    .page { display: none; }
-    .page.active { display: block; }
+    .page { display: none; opacity: 0; }
+    .page.active {
+      display: block;
+      animation: pageIn 0.35s ease forwards;
+    }
+    @keyframes pageIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
 
     /* ── TOP BAR ── */
     #topbar {
@@ -141,6 +171,7 @@
     }
     .topbar-phone a:hover { color: var(--gold); }
     @media (max-width: 768px) {
+      :root { --topbar-h: 0px; }
       #topbar { display: none; }
     }
 
@@ -778,6 +809,10 @@
       outline: none; transition: border-color 0.3s;
     }
     input:focus, select:focus, textarea:focus { border-color: var(--gold); }
+    input:invalid:not(:placeholder-shown), select:invalid:not(:placeholder-shown) {
+      border-color: rgba(231,76,60,0.5);
+    }
+    input[type="tel"]:valid:not(:placeholder-shown) { border-color: rgba(200,150,62,0.5); }
     select option { background: var(--charcoal-2); }
     textarea { resize: vertical; min-height: 100px; }
 
@@ -798,16 +833,35 @@
     /* MAP MOCKUP */
     .map-mock {
       height: 350px; border-radius: 10px;
-      background: linear-gradient(135deg, var(--charcoal-3), var(--charcoal-2));
-      border: 1px solid rgba(200,150,62,0.15);
+      background: #1e1d1a;
+      border: 1px solid rgba(200,150,62,0.2);
       display: flex; flex-direction: column;
       align-items: center; justify-content: center; gap: 1rem;
       position: relative; overflow: hidden;
+      cursor: pointer;
     }
+    .map-mock:hover { border-color: var(--gold); }
     .map-mock::before {
       content: '';
       position: absolute; inset: 0;
-      background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cpath d='M0 40L40 0' stroke='%23C8963E' stroke-opacity='0.05' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+      background-image:
+        linear-gradient(rgba(200,150,62,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200,150,62,0.06) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .map-mock::after {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(200,150,62,0.06) 0%, transparent 70%);
+    }
+    .map-open-hint {
+      position: absolute; bottom: 12px; right: 16px;
+      font-size: 0.72rem; color: var(--text-muted);
+      letter-spacing: 1px; z-index: 2;
     }
     .map-pin-big { font-size: 3.5rem; animation: bounce 2s infinite; }
     @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
@@ -874,6 +928,27 @@
       font-size: 0.78rem; color: var(--text-muted);
     }
 
+    /* ── SKIP LINK (Accessibility) ── */
+    .skip-link {
+      position: absolute; top: -100px; left: 0;
+      background: var(--gold); color: var(--charcoal);
+      padding: 0.5rem 1rem; font-weight: 700;
+      z-index: 9999; text-decoration: none;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* ── FOCUS STYLES (Keyboard nav) ── */
+    a:focus-visible, button:focus-visible, input:focus-visible,
+    select:focus-visible, textarea:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    /* ── FOOTER SOCIAL ICON HOVER ── */
+    .footer-social-icon:hover { color: var(--gold) !important; }
+
     /* ── ANIMATIONS ── */
     .fade-up {
       opacity: 0; transform: translateY(30px);
@@ -889,6 +964,7 @@
     }
 
     @media (max-width: 768px) {
+      :root { --topbar-h: 0px; }
       .nav-links { display: none; }
       .hamburger { display: flex; }
       section { padding: 60px 5%; }
@@ -924,9 +1000,17 @@
   </style>
 </head>
 <body>
+<noscript>
+  <style>.page{display:block!important;}</style>
+  <p style="background:#C8963E;color:#1A1814;text-align:center;padding:0.5rem;font-weight:700;margin:0;">
+    ⚠️ JavaScript is disabled. Some features may not work correctly.
+  </p>
+</noscript>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!-- ── FLOATING BUTTONS ── -->
-<a id="wa-float" href="https://wa.me/919472828685?text=Hello%20I%20want%20to%20join%20your%20guitar%20classes.%20Please%20share%20details target="_blank" aria-label="WhatsApp">
+<a id="wa-float" href="https://wa.me/919472828685?text=Hello%20I%20want%20to%20join%20your%20guitar%20classes.%20Please%20share%20details" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
   </svg>
@@ -938,7 +1022,7 @@
   </svg>
 </a>
 
-<div id="sticky-demo" onclick="navigate('demo')">
+<div id="sticky-demo" role="button" tabindex="0" aria-label="Book Free Demo Class" data-nav="demo">
   <span>🎸 Book Your FREE Demo Class Today →</span>
 </div>
 
@@ -949,26 +1033,26 @@
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
     </svg>
-    <a href="mailto:amazingtolearn@gmail.com" title="Email Amazing To Learn Guitar Classes Delhi">amazingtolearn@gmail.com</a>
+    <a href="mailto:amazingtolearn@gmail.com" rel="noopener">amazingtolearn@gmail.com</a>
   </div>
 
   <div class="topbar-right">
     <!-- Social icons -->
     <div class="topbar-social">
       <!-- YouTube -->
-      <a href="#" target="_blank" rel="noopener" title="Amazing To Learn Guitar Classes on YouTube">
+      <a href="javascript:void(0)" target="_blank" rel="noopener noreferrer" title="Amazing To Learn Guitar Classes on YouTube" aria-label="YouTube - Amazing To Learn">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="YouTube">
           <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
         </svg>
       </a>
       <!-- Instagram -->
-      <a href="#" target="_blank" rel="noopener" title="Amazing To Learn Guitar Classes on Instagram">
+      <a href="javascript:void(0)" target="_blank" rel="noopener noreferrer" title="Amazing To Learn Guitar Classes on Instagram" aria-label="Instagram - Amazing To Learn">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Instagram">
           <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
         </svg>
       </a>
       <!-- Facebook -->
-      <a href="#" target="_blank" rel="noopener" title="Amazing To Learn Guitar Classes on Facebook">
+      <a href="javascript:void(0)" target="_blank" rel="noopener noreferrer" title="Amazing To Learn Guitar Classes on Facebook" aria-label="Facebook - Amazing To Learn">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Facebook">
           <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
         </svg>
@@ -989,17 +1073,17 @@
 
 <!-- ── NAVBAR ── -->
 <nav id="navbar" role="navigation" aria-label="Main Navigation">
-  <a class="logo" onclick="navigate('home')">
+  <a class="logo" data-nav="home">
     <span class="logo-main">AMAZING TO LEARN</span>
     <span class="logo-sub">Guitar &amp; Music Academy · Laxmi Nagar</span>
   </a>
 
   <ul class="nav-links">
-    <li><a href="#" onclick="navigate('home')" data-page="home" class="active">Home</a></li>
-    <li><a href="#" onclick="navigate('about')" data-page="about">About</a></li>
-    <li><a href="#" onclick="navigate('courses')" data-page="courses">Courses</a></li>
-    <li><a href="#" onclick="navigate('contact')" data-page="contact">Contact</a></li>
-    <li><a href="#" onclick="navigate('demo')" class="nav-cta" data-page="demo">Book Free Demo</a></li>
+    <li><a href="javascript:void(0)" data-nav="home" data-page="home" class="active">Home</a></li>
+    <li><a href="javascript:void(0)" data-nav="about" data-page="about">About</a></li>
+    <li><a href="javascript:void(0)" data-nav="courses" data-page="courses">Courses</a></li>
+    <li><a href="javascript:void(0)" data-nav="contact" data-page="contact">Contact</a></li>
+    <li><a href="javascript:void(0)" data-nav="demo" class="nav-cta" data-page="demo">Book Free Demo</a></li>
   </ul>
 
   <div class="hamburger" id="hamburger" aria-label="Menu">
@@ -1008,17 +1092,17 @@
 </nav>
 
 <div class="mobile-menu" id="mobile-menu">
-  <a href="#" onclick="navigate('home');closeMobile()">🏠 Home</a>
-  <a href="#" onclick="navigate('about');closeMobile()">👤 About</a>
-  <a href="#" onclick="navigate('courses');closeMobile()">🎸 Courses</a>
-  <a href="#" onclick="navigate('contact');closeMobile()">📞 Contact</a>
-  <a href="#" onclick="navigate('demo');closeMobile()" class="nav-cta-m">🎵 Book Free Demo Class</a>
+  <a href="javascript:void(0)" data-nav="home" data-close-menu="1">🏠 Home</a>
+  <a href="javascript:void(0)" data-nav="about" data-close-menu="1">👤 About</a>
+  <a href="javascript:void(0)" data-nav="courses" data-close-menu="1">🎸 Courses</a>
+  <a href="javascript:void(0)" data-nav="contact" data-close-menu="1">📞 Contact</a>
+  <a href="javascript:void(0)" data-nav="demo" data-close-menu="1" class="nav-cta-m">🎵 Book Free Demo Class</a>
 </div>
 
 <!-- ═══════════════════════════════════════
      PAGE 1 — HOME
 ════════════════════════════════════════ -->
-<div id="page-home" class="page active">
+<main id="main-content"><div id="page-home" class="page active">
 
   <!-- HERO -->
   <section id="hero" aria-labelledby="hero-heading">
@@ -1035,13 +1119,13 @@
         Professional guitar classes in <strong>Laxmi Nagar, Delhi</strong>. From complete beginner to advanced performer — we guide your musical journey with passion and expertise.
       </p>
       <div class="hero-btns">
-        <a class="btn btn-gold" onclick="navigate('demo')">🎸 Book Free Demo Class</a>
-        <a class="btn btn-whatsapp" href="https://wa.me/919472828685?text=Hi%2C+I+want+a+free+demo" target="_blank">💬 WhatsApp Chat</a>
+        <a class="btn btn-gold" data-nav="demo">🎸 Book Free Demo Class</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/919472828685?text=Hello%20I%20want%20to%20join%20your%20guitar%20classes.%20Please%20share%20details" target="_blank" rel="noopener noreferrer">💬 WhatsApp Chat</a>
         <a class="btn btn-outline" href="tel:+919472828685">📞 Call Now</a>
       </div>
       <div class="hero-stats">
         <div class="stat-item">
-          <div class="stat-num">30+</div>
+          <div class="stat-num">50+</div>
           <div class="stat-label">Students Trained</div>
         </div>
         <div class="stat-item">
@@ -1053,7 +1137,7 @@
           <div class="stat-label">Courses Offered</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num">5★</div>
+          <div class="stat-num">4.9★</div>
           <div class="stat-label">Average Rating</div>
         </div>
       </div>
@@ -1111,7 +1195,7 @@
       <p class="section-sub">From your first chord to performing on stage — we have a course crafted for every stage of your musical journey.</p>
     </div>
     <div class="grid-3">
-      <div class="course-card fade-up" onclick="navigate('courses')">
+      <div class="course-card fade-up" data-nav="courses">
         <div class="course-card-img">🎸</div>
         <div class="course-card-body">
           <h3>Beginner Guitar Course</h3>
@@ -1119,7 +1203,7 @@
           <span class="badge">Most Popular</span>
         </div>
       </div>
-      <div class="course-card fade-up" onclick="navigate('courses')">
+      <div class="course-card fade-up" data-nav="courses">
         <div class="course-card-img">🪕</div>
         <div class="course-card-body">
           <h3>Acoustic Guitar Course</h3>
@@ -1127,7 +1211,7 @@
           <span class="badge">Beginner–Intermediate</span>
         </div>
       </div>
-      <div class="course-card fade-up" onclick="navigate('courses')">
+      <div class="course-card fade-up" data-nav="courses">
         <div class="course-card-img">🎼</div>
         <div class="course-card-body">
           <h3>Intermediate Guitar</h3>
@@ -1135,7 +1219,7 @@
           <span class="badge">Intermediate</span>
         </div>
       </div>
-      <div class="course-card fade-up" onclick="navigate('courses')">
+      <div class="course-card fade-up" data-nav="courses">
         <div class="course-card-img">⚡</div>
         <div class="course-card-body">
           <h3>Advanced Guitar Training</h3>
@@ -1143,7 +1227,7 @@
           <span class="badge">Advanced</span>
         </div>
       </div>
-      <div class="course-card fade-up" onclick="navigate('courses')">
+      <div class="course-card fade-up" data-nav="courses">
         <div class="course-card-img">🎤</div>
         <div class="course-card-body">
           <h3>Vocal Training</h3>
@@ -1151,7 +1235,7 @@
           <span class="badge">All Levels</span>
         </div>
       </div>
-      <div class="course-card fade-up" onclick="navigate('courses')">
+      <div class="course-card fade-up" data-nav="courses">
         <div class="course-card-img">🎹</div>
         <div class="course-card-body">
           <h3>Keyboard Classes</h3>
@@ -1161,7 +1245,7 @@
       </div>
     </div>
     <div style="text-align:center;margin-top:2.5rem;">
-      <a class="btn btn-gold" onclick="navigate('courses')">View All Courses</a>
+      <a class="btn btn-gold" data-nav="courses">View All Courses</a>
     </div>
   </section>
 
@@ -1232,8 +1316,8 @@
       </div>
     </div>
     <div class="slider-controls">
-      <button class="slider-btn" id="t-prev" aria-label="Previous">◀</button>
-      <button class="slider-btn" id="t-next" aria-label="Next">▶</button>
+      <button type="button" class="slider-btn" id="t-prev" aria-label="Previous">◀</button>
+      <button type="button" class="slider-btn" id="t-next" aria-label="Next">▶</button>
     </div>
   </section>
 
@@ -1255,69 +1339,6 @@
       <div class="area-pill"><span class="pin">📍</span><span>Guitar Classes in Shakarpur</span></div>
       <div class="area-pill"><span class="pin">📍</span><span>Guitar Classes in Vikas Marg</span></div>
       <div class="area-pill"><span class="pin">📍</span><span>Online Guitar Classes All India</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Laxmi Nagar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Nirman Vihar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Preet Vihar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Shakarpur Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Pandav Nagar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Patparganj Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>IP Extension Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Mayur Vihar Phase 1 Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Mayur Vihar Phase 2 Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Mayur Vihar Phase 3 Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Krishna Nagar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Geeta Colony Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Karkardooma Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Vivek Vihar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Surajmal Vihar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Anand Vihar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Shahdara Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Mandawali Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Kaushambi Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Vaishali Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Indirapuram Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Vasundhara Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Noida Sector 15 Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Noida Sector 16 Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Noida Sector 18 Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Noida Sector 62 Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Connaught Place Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Karol Bagh Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Rajiv Chowk Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Paharganj Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Daryaganj Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Lajpat Nagar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>South Extension Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Green Park Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Hauz Khas Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Malviya Nagar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Saket Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Dwarka Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Janakpuri Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Rohini Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Pitampura Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Online Guitar Classes All India</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Rajouri Garden Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Punjabi Bagh Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Paschim Vihar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Tilak Nagar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Subhash Nagar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Vikaspuri Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Uttam Nagar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Dwarka Sector 12 Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Dwarka Sector 7 Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Dwarka Sector 21 Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Rohini Sector 9 Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Rohini Sector 11 Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Rohini Sector 15 Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Pitampura Kohat Enclave Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Ashok Vihar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Model Town Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Mukherjee Nagar Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Greater Kailash Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Nehru Place Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Okhla Guitar Classes</span></div>
-      <div class="area-pill"><span class="pin">📍</span><span>Guitar Classes near me</span></div>
     </div>
   </section>
 
@@ -1361,42 +1382,42 @@
     </div>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q" data-faq="toggle">
           <h4>Can complete beginners join the guitar classes?</h4>
           <span class="faq-icon">+</span>
         </div>
         <div class="faq-a"><p>Absolutely! Our beginner course is specifically designed for those with zero prior experience. We start from the very basics — how to hold the guitar, tune it, and play your first chord. No prior musical knowledge required.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q" data-faq="toggle">
           <h4>What is the duration of the guitar course?</h4>
           <span class="faq-icon">+</span>
         </div>
         <div class="faq-a"><p>The beginner course runs for 3 months (12 weeks). Intermediate and Advanced courses are 4–6 months each. Classes are typically held 3 days per week, with each session lasting 45–60 minutes.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q" data-faq="toggle">
           <h4>Do you provide online guitar classes?</h4>
           <span class="faq-icon">+</span>
         </div>
         <div class="faq-a"><p>Yes! We offer fully live, interactive online classes via Zoom. The curriculum, quality, and instructor are the same as our offline batches. Students from anywhere in India can join.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q" data-faq="toggle">
           <h4>Do I need to own a guitar to join?</h4>
           <span class="faq-icon">+</span>
         </div>
         <div class="faq-a"><p>For offline classes, guitars are available at the academy during class time. However, we recommend getting your own guitar for practice at home. We can help you choose the right guitar within your budget.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q" data-faq="toggle">
           <h4>What is the batch size for classes?</h4>
           <span class="faq-icon">+</span>
         </div>
         <div class="faq-a"><p>We maintain a maximum of 5 students per batch to ensure personalized attention and quality instruction. One-on-one private sessions are also available upon request.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q" data-faq="toggle">
           <h4>Is there a free demo class available?</h4>
           <span class="faq-icon">+</span>
         </div>
@@ -1417,30 +1438,30 @@
     <div>
       <div class="section-tag">Our Story</div>
       <h1>About <span>Amazing To Learn</span></h1>
-      <p>Nurturing musical talent in East Delhi since 2016</p>
+      <p>Nurturing musical talent in East Delhi since 2022</p>
     </div>
   </div>
 
   <!-- STORY -->
-  <section class="about-story">
+  <section class="about-story" aria-label="Academy Story">
     <div class="about-two">
       <div>
         <div class="section-tag">About The Academy</div>
         <h2 class="section-title">Where Passion Meets <span>Music</span></h2>
         <div class="divider"></div>
         <p style="color:var(--text-muted);line-height:1.8;margin-top:1.2rem">
-          Amazing To Learn was founded with a single mission: to make quality music education accessible to everyone in East Delhi. What started as a small studio in Laxmi Nagar has grown into a thriving music academy with over 30+ students trained across all age groups.
+          Amazing To Learn was founded with a single mission: to make quality music education accessible to everyone in East Delhi. What started as a small studio in Laxmi Nagar has grown into a thriving music academy with over 50 students trained across all age groups.
         </p>
         <p style="color:var(--text-muted);line-height:1.8;margin-top:1rem">
           We believe that music is not a talent you're born with — it's a skill you develop. With the right guidance, structured curriculum, and a supportive environment, anyone can learn to play guitar beautifully and expressively.
         </p>
         <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
           <div class="card" style="flex:1;min-width:140px;padding:1.2rem;text-align:center">
-            <div style="font-family:var(--font-hero);font-size:2rem;color:var(--gold)">2016</div>
+            <div style="font-family:var(--font-hero);font-size:2rem;color:var(--gold)">2022</div>
             <div style="font-size:0.8rem;color:var(--text-muted)">FOUNDED</div>
           </div>
           <div class="card" style="flex:1;min-width:140px;padding:1.2rem;text-align:center">
-            <div style="font-family:var(--font-hero);font-size:2rem;color:var(--gold)">30+</div>
+            <div style="font-family:var(--font-hero);font-size:2rem;color:var(--gold)">50+</div>
             <div style="font-size:0.8rem;color:var(--text-muted)">STUDENTS</div>
           </div>
           <div class="card" style="flex:1;min-width:140px;padding:1.2rem;text-align:center">
@@ -1494,9 +1515,9 @@
       <div class="instructor-card">
         <div class="instr-avatar">🎸</div>
         <div class="instr-name">Nitin Karan</div>
-        <div class="instr-title">Lead Guitar Instructor & Music Producer · 3+ Years Experience</div>
+        <div class="instr-title">Guitar Instructor &amp; Music Producer · 3+ Years</div>
         <p class="instr-bio">
-          Nitin is a classically trained guitarist with expertise in both Western and Indian music. With over 3+ years of teaching experience and 30+ students trained, he brings a unique blend of technical precision and musical sensitivity to every class. Certified in Trinity College London guitar grades.
+          Nitin Karan is a passionate guitarist and professional music producer with expertise in both Western and Indian music. With 3+ years of dedicated teaching experience and 50+ students trained, he brings a unique blend of production knowledge and hands-on musicianship to every class.
         </p>
         <div class="skills-list">
           <span class="skill-tag">Classical Guitar</span>
@@ -1650,7 +1671,7 @@
         </div>
         <div class="cd-footer">
           <span class="cd-duration">Duration: <strong>3 Months</strong> &nbsp;|&nbsp; 3 Days/Week &nbsp;|&nbsp; 45 min/class</span>
-          <a class="btn btn-gold" onclick="navigate('demo')">Book Free Demo</a>
+          <a class="btn btn-gold" data-nav="demo">Book Free Demo</a>
         </div>
       </div>
 
@@ -1676,7 +1697,7 @@
         </div>
         <div class="cd-footer">
           <span class="cd-duration">Duration: <strong>4 Months</strong> &nbsp;|&nbsp; 3 Days/Week &nbsp;|&nbsp; 60 min/class</span>
-          <a class="btn btn-gold" onclick="navigate('demo')">Book Free Demo</a>
+          <a class="btn btn-gold" data-nav="demo">Book Free Demo</a>
         </div>
       </div>
 
@@ -1701,8 +1722,8 @@
           </ul>
         </div>
         <div class="cd-footer">
-          <span class="cd-duration">Duration: <strong>6+ Months</strong> &nbsp;|&nbsp; 3 Days/Week &nbsp;|&nbsp; 60 min/class</span>
-          <a class="btn btn-gold" onclick="navigate('demo')">Book Free Demo</a>
+          <span class="cd-duration">Duration: <strong>4 Months</strong> &nbsp;|&nbsp; 3 Days/Week &nbsp;|&nbsp; 60 min/class</span>
+          <a class="btn btn-gold" data-nav="demo">Book Free Demo</a>
         </div>
       </div>
 
@@ -1727,8 +1748,8 @@
           </ul>
         </div>
         <div class="cd-footer">
-          <span class="cd-duration">Duration: <strong>8+ Months</strong> &nbsp;|&nbsp; 3 Days/Week &nbsp;|&nbsp; 60 min/class</span>
-          <a class="btn btn-gold" onclick="navigate('demo')">Book Free Demo</a>
+          <span class="cd-duration">Duration: <strong>6 Months</strong> &nbsp;|&nbsp; 3–4 Days/Week &nbsp;|&nbsp; 60 min/class</span>
+          <a class="btn btn-gold" data-nav="demo">Book Free Demo</a>
         </div>
       </div>
 
@@ -1754,7 +1775,7 @@
         </div>
         <div class="cd-footer">
           <span class="cd-duration">Duration: <strong>3–6 Months</strong> &nbsp;|&nbsp; 3 Days/Week &nbsp;|&nbsp; 45 min/class</span>
-          <a class="btn btn-gold" onclick="navigate('demo')">Book Free Demo</a>
+          <a class="btn btn-gold" data-nav="demo">Book Free Demo</a>
         </div>
       </div>
 
@@ -1780,7 +1801,7 @@
         </div>
         <div class="cd-footer">
           <span class="cd-duration">Duration: <strong>3–4 Months</strong> &nbsp;|&nbsp; 3 Days/Week &nbsp;|&nbsp; 45 min/class</span>
-          <a class="btn btn-gold" onclick="navigate('demo')">Book Free Demo</a>
+          <a class="btn btn-gold" data-nav="demo">Book Free Demo</a>
         </div>
       </div>
 
@@ -1806,7 +1827,7 @@
         </div>
         <div class="cd-footer">
           <span class="cd-duration">Same duration as offline courses &nbsp;|&nbsp; Flexible Scheduling</span>
-          <a class="btn btn-gold" onclick="navigate('demo')">Book Free Demo</a>
+          <a class="btn btn-gold" data-nav="demo">Book Free Demo</a>
         </div>
       </div>
 
@@ -1877,21 +1898,21 @@
       <p class="section-sub">Fill in your details and we'll confirm your free demo class within 24 hours via call/WhatsApp.</p>
     </div>
     <div class="form-container">
-      <form onsubmit="submitForm(event)">
+      <form data-form="demo" method="post" aria-label="Book Free Demo Class Form" novalidate>
         <div class="form-row">
           <div class="form-group">
             <label for="f-name">Full Name *</label>
-            <input type="text" id="f-name" placeholder="Your full name" required />
+            <input type="text" id="f-name" placeholder="Your full name" maxlength="80" autocomplete="name" required />
           </div>
           <div class="form-group">
             <label for="f-phone">Phone Number *</label>
-            <input type="tel" id="f-phone" placeholder="+91 94728 28685" required />
+            <input type="tel" id="f-phone" placeholder="+91 94728 28685" maxlength="15" pattern="[6-9][0-9]{9}" inputmode="tel" autocomplete="tel" required />
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label for="f-email">Email Address</label>
-            <input type="email" id="f-email" placeholder="your@email.com" />
+            <input type="email" id="f-email" placeholder="your@email.com" maxlength="100" autocomplete="email" />
           </div>
           <div class="form-group">
             <label for="f-course">Course Interest *</label>
@@ -1931,14 +1952,14 @@
         <div class="form-row">
           <div class="form-group full">
             <label for="f-msg">Anything else you'd like us to know?</label>
-            <textarea id="f-msg" placeholder="E.g., I'm a complete beginner, I want to learn Bollywood songs..."></textarea>
+            <textarea id="f-msg" placeholder="E.g., I'm a complete beginner, I want to learn Bollywood songs..." maxlength="500"></textarea>
           </div>
         </div>
         <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;font-size:1rem;padding:1rem">
           🎸 Book My Free Demo Class
         </button>
         <p style="text-align:center;font-size:0.8rem;color:var(--text-muted);margin-top:1rem">
-          Or WhatsApp us directly: <a href="+91 94728 28685" style="color:var(--gold)" target="_blank">+91 94728 28685</a>
+          Or WhatsApp us directly: <a href="https://wa.me/919472828685?text=Hello%20I%20want%20to%20join%20your%20guitar%20classes.%20Please%20share%20details" style="color:var(--gold)" target="_blank" rel="noopener noreferrer">+91 94728 28685</a>
         </p>
       </form>
     </div>
@@ -1952,7 +1973,7 @@
     <p style="color:var(--text-muted);margin:1rem auto 2rem;max-width:500px">
       Send us a WhatsApp message and we'll book your free demo class instantly. We're usually available between 9 AM – 8 PM.
     </p>
-    <a class="btn btn-whatsapp" href="+91 94728 28685?text=Hi%2C+I+want+to+book+a+free+demo+guitar+class" target="_blank" style="font-size:1.1rem;padding:1rem 2.5rem">
+    <a class="btn btn-whatsapp" href="https://wa.me/919472828685?text=Hello%20I%20want%20to%20join%20your%20guitar%20classes.%20Please%20share%20details" target="_blank" rel="noopener noreferrer" style="font-size:1.1rem;padding:1rem 2.5rem">
       💬 Book via WhatsApp
     </a>
   </section>
@@ -2033,12 +2054,12 @@
       <h2 class="section-title">Find Us in <span>Laxmi Nagar</span></h2>
       <div class="divider center"></div>
     </div>
-    <div class="map-mock">
+    <div class="map-mock" data-map-open="1" role="link" tabindex="0" aria-label="Open location in Google Maps">
       <span class="map-pin-big">📍</span>
       <div class="map-address">
         <strong>Amazing To Learn Guitar Classes</strong><br>
         Laxmi Nagar, East Delhi – 110092<br>
-        <a href="https://maps.google.com" target="_blank" style="color:var(--gold);text-decoration:none;font-size:0.85rem">📌 Open in Google Maps →</a>
+        <a href="https://maps.google.com/?q=Amazing+To+Learn+Guitar+Classes+Laxmi+Nagar+East+Delhi" target="_blank" rel="noopener noreferrer" style="color:var(--gold);text-decoration:none;font-size:0.85rem">📌 Open in Google Maps →</a>
       </div>
     </div>
   </section>
@@ -2076,13 +2097,13 @@
       <div class="contact-info-card fade-up">
         <div class="ci-icon">💬</div>
         <h3>WhatsApp</h3>
-        <a href="https://wa.me/919472828685" target="_blank">+91 94728 28685</a>
+        <a href="https://wa.me/919472828685?text=Hello%20I%20want%20to%20join%20your%20guitar%20classes.%20Please%20share%20details" target="_blank" rel="noopener noreferrer">+91 94728 28685</a>
         <p style="margin-top:0.4rem">Quick response guaranteed</p>
       </div>
       <div class="contact-info-card fade-up">
         <div class="ci-icon">📧</div>
         <h3>Email</h3>
-        <a href="/cdn-cgi/l/email-protection#c2abaca4ad82a3afa3b8abaca5b6adaea7a3b0acecabac"><span class="__cf_email__" data-cfemail="076e69616847666a667d6e696073686b62667569296e69">[email&#160;protected]</span></a>
+        <a href="mailto:amazingtolearn@gmail.com" rel="noopener">amazingtolearn@gmail.com</a>
         <p style="margin-top:0.4rem">Reply within 24 hours</p>
       </div>
     </div>
@@ -2095,13 +2116,13 @@
       <h2 class="section-title">We're in <span>Laxmi Nagar</span></h2>
       <div class="divider center"></div>
     </div>
-    <div class="map-mock">
+    <div class="map-mock" data-map-open="1" role="link" tabindex="0" aria-label="Open location in Google Maps">
       <span class="map-pin-big">🗺️</span>
       <div class="map-address">
         <strong>Amazing To Learn Guitar Classes</strong><br>
         Laxmi Nagar, East Delhi – 110092<br>
         Near Laxmi Nagar Metro Station (Blue Line)<br>
-        <a href="https://www.google.com/maps/place/Amazing+To+Learn/@28.6314008,77.2722946,17.46z/data=!4m6!3m5!1s0x390cfddf605d6f17:0x9c121127d1e64429!8m2!3d28.6312021!4d77.2745614!16s%2Fg%2F11yfcqm6py?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color:var(--gold);text-decoration:none;font-size:0.85rem">📌Search on Google Maps →</a>
+        <a href="https://maps.google.com/?q=Laxmi+Nagar+Delhi" target="_blank" rel="noopener noreferrer" style="color:var(--gold);text-decoration:none;font-size:0.85rem">📌 View on Google Maps →</a>
       </div>
     </div>
   </section>
@@ -2128,10 +2149,10 @@
         <div class="divider"></div>
         <p style="color:var(--text-muted);margin:1rem 0 1.5rem;font-size:0.9rem">Follow us on social media for tips, student performances, new batch announcements and more!</p>
         <div class="social-row">
-          <a class="social-btn" href="#" target="_blank"><span class="si">📸</span> Instagram</a>
-          <a class="social-btn" href="#" target="_blank"><span class="si">📺</span> YouTube</a>
-          <a class="social-btn" href="#" target="_blank"><span class="si">👍</span> Facebook</a>
-          <a class="social-btn" href="https://wa.me/919472828685" target="_blank"><span class="si">💬</span> WhatsApp</a>
+          <a class="social-btn" href="javascript:void(0)" aria-label="Instagram"><span class="si">📸</span> Instagram</a>
+          <a class="social-btn" href="javascript:void(0)" aria-label="YouTube"><span class="si">📺</span> YouTube</a>
+          <a class="social-btn" href="javascript:void(0)" aria-label="Facebook"><span class="si">👍</span> Facebook</a>
+          <a class="social-btn" href="https://wa.me/919472828685?text=Hello%20I%20want%20to%20join%20your%20guitar%20classes.%20Please%20share%20details" target="_blank" rel="noopener noreferrer"><span class="si">💬</span> WhatsApp</a>
         </div>
       </div>
     </div>
@@ -2145,27 +2166,27 @@
       <div class="divider center"></div>
     </div>
     <div class="form-container">
-      <form onsubmit="submitContact(event)">
+      <form data-form="contact" method="post" aria-label="Contact Inquiry Form" novalidate>
         <div class="form-row">
           <div class="form-group">
             <label for="c-name">Your Name *</label>
-            <input type="text" id="c-name" placeholder="Full name" required />
+            <input type="text" id="c-name" placeholder="Full name" maxlength="80" autocomplete="name" required />
           </div>
           <div class="form-group">
             <label for="c-phone">Phone *</label>
-            <input type="tel" id="c-phone" placeholder="+91 94728 28685" required />
+            <input type="tel" id="c-phone" placeholder="+91 94728 28685" maxlength="15" pattern="[6-9][0-9]{9}" inputmode="tel" autocomplete="tel" required />
           </div>
         </div>
         <div class="form-row">
           <div class="form-group full">
             <label for="c-email">Email</label>
-            <input type="email" id="c-email" placeholder="your@email.com" />
+            <input type="email" id="c-email" placeholder="your@email.com" maxlength="100" autocomplete="email" />
           </div>
         </div>
         <div class="form-row">
           <div class="form-group full">
             <label for="c-msg">Message *</label>
-            <textarea id="c-msg" placeholder="How can we help you?" required></textarea>
+            <textarea id="c-msg" placeholder="How can we help you?" maxlength="500" required></textarea>
           </div>
         </div>
         <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;font-size:1rem;padding:1rem">
@@ -2204,28 +2225,28 @@
     </div>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q" data-faq="toggle">
           <h4>What are the class fees?</h4>
           <span class="faq-icon">+</span>
         </div>
         <div class="faq-a"><p>Fees vary by course and batch size. Please call or WhatsApp us for the current fee structure. We offer special discounts for students and group enrollments.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q" data-faq="toggle">
           <h4>Is there a registration fee?</h4>
           <span class="faq-icon">+</span>
         </div>
         <div class="faq-a"><p>There is a one-time nominal registration fee. The free demo class requires no payment. Registration happens after you decide to enroll following the demo.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q" data-faq="toggle">
           <h4>What is the minimum age to join?</h4>
           <span class="faq-icon">+</span>
         </div>
         <div class="faq-a"><p>We accept students from age 7 onwards. There is no upper age limit — we have had students from age 50+ who learned guitar beautifully with us.</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
+        <div class="faq-q" data-faq="toggle">
           <h4>Can I switch from offline to online classes?</h4>
           <span class="faq-icon">+</span>
         </div>
@@ -2237,54 +2258,56 @@
 </div><!-- /page-contact -->
 
 
+</main><!-- /main-content -->
+
 <!-- ── FOOTER ── -->
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <div class="logo-main" style="cursor:pointer" onclick="navigate('home')">AMAZING TO LEARN</div>
+      <div class="logo-main" style="cursor:pointer" data-nav="home">AMAZING TO LEARN</div>
       <span class="logo-sub">Guitar &amp; Music Academy · Laxmi Nagar, East Delhi</span>
-      <p>Delhi's most trusted guitar and music academy. Transforming beginners into confident musicians since 2016. Book your free demo class today!</p>
+      <p>Delhi's most trusted guitar and music academy. Transforming beginners into confident musicians since 2022. Book your free demo class today!</p>
       <div style="display:flex;gap:0.8rem;margin-top:1rem">
-        <a href="#" style="color:var(--text-muted);font-size:1.3rem;transition:color 0.3s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-muted)'">📸</a>
-        <a href="#" style="color:var(--text-muted);font-size:1.3rem;transition:color 0.3s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-muted)'">📺</a>
-        <a href="#" style="color:var(--text-muted);font-size:1.3rem;transition:color 0.3s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-muted)'">👍</a>
-        <a href="https://wa.me/919472828685" target="_blank" style="color:var(--text-muted);font-size:1.3rem;transition:color 0.3s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--text-muted)'">💬</a>
+        <a href="javascript:void(0)" class="footer-social-icon" style="color:var(--text-muted);font-size:1.3rem;transition:color 0.3s" aria-label="Instagram">📸</a>
+        <a href="javascript:void(0)" class="footer-social-icon" style="color:var(--text-muted);font-size:1.3rem;transition:color 0.3s" aria-label="YouTube">📺</a>
+        <a href="javascript:void(0)" class="footer-social-icon" style="color:var(--text-muted);font-size:1.3rem;transition:color 0.3s" aria-label="Facebook">👍</a>
+        <a href="https://wa.me/919472828685?text=Hello%20I%20want%20to%20join%20your%20guitar%20classes.%20Please%20share%20details" target="_blank" rel="noopener noreferrer" class="footer-social-icon" style="color:var(--text-muted);font-size:1.3rem;transition:color 0.3s" aria-label="WhatsApp">💬</a>
       </div>
     </div>
     <div class="footer-col">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="#" onclick="navigate('home')">Home</a></li>
-        <li><a href="#" onclick="navigate('about')">About Us</a></li>
-        <li><a href="#" onclick="navigate('courses')">All Courses</a></li>
-        <li><a href="#" onclick="navigate('demo')">Book Free Demo</a></li>
-        <li><a href="#" onclick="navigate('contact')">Contact Us</a></li>
+        <li><a href="javascript:void(0)" data-nav="home">Home</a></li>
+        <li><a href="javascript:void(0)" data-nav="about">About Us</a></li>
+        <li><a href="javascript:void(0)" data-nav="courses">All Courses</a></li>
+        <li><a href="javascript:void(0)" data-nav="demo">Book Free Demo</a></li>
+        <li><a href="javascript:void(0)" data-nav="contact">Contact Us</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Courses</h4>
       <ul>
-        <li><a href="#" onclick="navigate('courses')">Beginner Guitar</a></li>
-        <li><a href="#" onclick="navigate('courses')">Acoustic Guitar</a></li>
-        <li><a href="#" onclick="navigate('courses')">Intermediate Guitar</a></li>
-        <li><a href="#" onclick="navigate('courses')">Advanced Guitar</a></li>
-        <li><a href="#" onclick="navigate('courses')">Vocal Training</a></li>
-        <li><a href="#" onclick="navigate('courses')">Keyboard Classes</a></li>
+        <li><a href="javascript:void(0)" data-nav="courses">Beginner Guitar</a></li>
+        <li><a href="javascript:void(0)" data-nav="courses">Acoustic Guitar</a></li>
+        <li><a href="javascript:void(0)" data-nav="courses">Intermediate Guitar</a></li>
+        <li><a href="javascript:void(0)" data-nav="courses">Advanced Guitar</a></li>
+        <li><a href="javascript:void(0)" data-nav="courses">Vocal Training</a></li>
+        <li><a href="javascript:void(0)" data-nav="courses">Keyboard Classes</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Contact</h4>
       <ul>
         <li><a href="tel:+919472828685">📞 +91 94728 28685</a></li>
-        <li><a href="https://wa.me/919472828685" target="_blank">💬 WhatsApp Us</a></li>
-        <li><a href="/cdn-cgi/l/email-protection#8ce5e2eae3ccede1edf6e5e2ebf8e3e0e9edfee2a2e5e2">📧 <span class="__cf_email__" data-cfemail="c1a8afa7ae81a0aca0bba8afa6b5aeada4a0b3afefa8af">[email&#160;protected]</span></a></li>
-        <li><a href="#">📍 Laxmi Nagar, East Delhi</a></li>
+        <li><a href="https://wa.me/919472828685?text=Hello%20I%20want%20to%20join%20your%20guitar%20classes.%20Please%20share%20details" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a></li>
+        <li><a href="mailto:amazingtolearn@gmail.com" rel="noopener">amazingtolearn@gmail.com</a></li>
+        <li><a href="https://maps.google.com/?q=Amazing+To+Learn+Guitar+Classes+Laxmi+Nagar+East+Delhi" target="_blank" rel="noopener noreferrer">📍 Laxmi Nagar, East Delhi</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2024 Amazing To Learn Guitar Classes · Laxmi Nagar, East Delhi</span>
-    <span>Designed By Lost in Hack ♪ for music lovers</span>
+    <span>© 2026 Amazing To Learn Guitar Classes · Laxmi Nagar, East Delhi</span>
+    <span>Designed with ♪ for music lovers</span>
   </div>
 </footer>
 
@@ -2296,105 +2319,355 @@
   transition:transform 0.4s ease;z-index:9999;white-space:nowrap;
 ">✅ Message sent! We'll contact you soon.</div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // ── NAVIGATION ──
+<script>
+(function() {
+  'use strict';
+
+  /* ── ALLOWED PAGES (whitelist to prevent XSS via navigate()) ── */
+  var ALLOWED_PAGES = { home:1, about:1, courses:1, demo:1, contact:1 };
+
+  /* ── NAVIGATION ── */
   function navigate(page) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.getElementById('page-' + page).classList.add('active');
-    document.querySelectorAll('.nav-links a[data-page]').forEach(a => {
+    // XSS guard: only allow whitelisted page IDs
+    if (!ALLOWED_PAGES[page]) return false;
+    var target = document.getElementById('page-' + page);
+    if (!target) return false;
+
+    // Hide all pages
+    document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
+
+    // Force reflow so CSS animation replays
+    void target.offsetWidth;
+    target.classList.add('active');
+
+    // Update nav active states
+    document.querySelectorAll('.nav-links a[data-page]').forEach(function(a) {
       a.classList.toggle('active', a.dataset.page === page);
     });
+
+    // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    observeFadeUps();
+
+    // Observe fade-ups after animation starts
+    setTimeout(observeFadeUps, 50);
     return false;
   }
+  // Expose globally (needed by inline onclick attributes)
+  window.navigate = navigate;
 
-  // ── HAMBURGER ──
-  const ham = document.getElementById('hamburger');
-  const mob = document.getElementById('mobile-menu');
-  ham.addEventListener('click', () => {
-    ham.classList.toggle('open');
-    mob.classList.toggle('open');
-  });
+  /* ── HAMBURGER ── */
+  var ham = document.getElementById('hamburger');
+  var mob = document.getElementById('mobile-menu');
+  if (ham && mob) {
+    ham.addEventListener('click', function() {
+      ham.classList.toggle('open');
+      mob.classList.toggle('open');
+    });
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!ham.contains(e.target) && !mob.contains(e.target)) {
+        ham.classList.remove('open');
+        mob.classList.remove('open');
+      }
+    });
+  }
   function closeMobile() {
-    ham.classList.remove('open');
-    mob.classList.remove('open');
+    if (ham) ham.classList.remove('open');
+    if (mob) mob.classList.remove('open');
+  }
+  window.closeMobile = closeMobile;
+
+  /* ── SCROLL EFFECTS ── */
+  var navbar = document.getElementById('navbar');
+  if (navbar) {
+    window.addEventListener('scroll', function() {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
   }
 
-  // ── SCROLL EFFECTS ──
-  window.addEventListener('scroll', () => {
-    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
-  });
-
-  // ── FAQ ──
+  /* ── FAQ ACCORDION ── */
   function toggleFaq(el) {
-    const item = el.parentElement;
+    var item = el.parentElement;
+    // Close all others
+    document.querySelectorAll('.faq-item.open').forEach(function(other) {
+      if (other !== item) other.classList.remove('open');
+    });
     item.classList.toggle('open');
   }
+  window.toggleFaq = toggleFaq;
 
-  // ── TESTIMONIAL SLIDER ──
-  const track = document.getElementById('t-track');
-  let tIndex = 0;
-  const tTotal = track.children.length;
+  /* ── TESTIMONIAL SLIDER ── */
+  var track = document.getElementById('t-track');
+  var tIndex = 0;
+  var autoSlide;
 
-  function updateSlider() {
-    const w = track.children[0].offsetWidth + 24;
-    track.style.transform = `translateX(-${tIndex * w}px)`;
+  function getVisibleCount() {
+    if (window.innerWidth <= 600) return 1;
+    if (window.innerWidth <= 900) return 2;
+    return 3;
   }
 
-  document.getElementById('t-next').addEventListener('click', () => {
-    tIndex = (tIndex + 1) % (tTotal - 2);
-    updateSlider();
-  });
-  document.getElementById('t-prev').addEventListener('click', () => {
-    tIndex = (tIndex - 1 + tTotal - 2) % (tTotal - 2);
-    updateSlider();
-  });
+  function getMaxIndex() {
+    if (!track) return 0;
+    var total = track.children.length;
+    var visible = getVisibleCount();
+    return Math.max(0, total - visible);
+  }
 
-  // Auto-slide
-  setInterval(() => {
-    tIndex = (tIndex + 1) % (tTotal - 2);
-    updateSlider();
-  }, 4000);
+  function updateSlider() {
+    if (!track || !track.children.length) return;
+    var gap = 24;
+    var w = track.children[0].offsetWidth + gap;
+    var max = getMaxIndex();
+    if (tIndex > max) tIndex = max;
+    track.style.transform = 'translateX(-' + (tIndex * w) + 'px)';
+  }
 
-  // ── FADE UP OBSERVER ──
+  var btnNext = document.getElementById('t-next');
+  var btnPrev = document.getElementById('t-prev');
+  if (btnNext) {
+    btnNext.addEventListener('click', function() {
+      tIndex = (tIndex >= getMaxIndex()) ? 0 : tIndex + 1;
+      updateSlider();
+      restartAutoSlide();
+    });
+  }
+  if (btnPrev) {
+    btnPrev.addEventListener('click', function() {
+      tIndex = (tIndex <= 0) ? getMaxIndex() : tIndex - 1;
+      updateSlider();
+      restartAutoSlide();
+    });
+  }
+
+  function restartAutoSlide() {
+    clearInterval(autoSlide);
+    autoSlide = setInterval(function() {
+      tIndex = (tIndex >= getMaxIndex()) ? 0 : tIndex + 1;
+      updateSlider();
+    }, 4000);
+  }
+  restartAutoSlide();
+
+  // Recalculate on resize
+  var resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(updateSlider, 150);
+  }, { passive: true });
+
+  /* ── FADE-UP INTERSECTION OBSERVER ── */
   function observeFadeUps() {
-    const els = document.querySelectorAll('.fade-up:not(.visible)');
+    var els = document.querySelectorAll('.fade-up:not(.visible)');
     if (!els.length) return;
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach((e, i) => {
+
+    // Fallback for browsers without IntersectionObserver
+    if (!window.IntersectionObserver) {
+      els.forEach(function(el) { el.classList.add('visible'); });
+      return;
+    }
+
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e, i) {
         if (e.isIntersecting) {
-          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          setTimeout(function() { e.target.classList.add('visible'); }, i * 80);
           obs.unobserve(e.target);
         }
       });
-    }, { threshold: 0.1 });
-    els.forEach(el => obs.observe(el));
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+    els.forEach(function(el) { obs.observe(el); });
   }
+  window.observeFadeUps = observeFadeUps;
   observeFadeUps();
 
-  // ── FORM SUBMIT ──
-  function submitForm(e) {
-    e.preventDefault();
-    showToast('🎸 Demo booked! We\'ll call you within 24 hours.');
-    e.target.reset();
-  }
-  function submitContact(e) {
-    e.preventDefault();
-    showToast('📨 Message sent! We\'ll reply soon.');
-    e.target.reset();
+  /* ── INPUT SANITIZATION ── */
+  function sanitize(str) {
+    return String(str)
+      .replace(/&/g,'&amp;')
+      .replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;')
+      .replace(/'/g,'&#x27;')
+      .trim();
   }
 
-  // ── TOAST ──
-  function showToast(message) {
-    const toast = document.getElementById('toast');
-    toast.textContent = message;
-    toast.style.transform = 'translateX(-50%) translateY(0)';
-    clearTimeout(toast._timer);
-    toast._timer = setTimeout(() => {
-      toast.style.transform = 'translateX(-50%) translateY(100px)';
-    }, 2500);
+  function isValidPhone(val) {
+    return /^[6-9]\d{9}$/.test(val.replace(/[\s\-\+]/g,''));
   }
+
+  function isValidEmail(val) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+  }
+
+  function showFieldError(id, msg) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    el.style.borderColor = '#e74c3c';
+    var errId = id + '-err';
+    var existing = document.getElementById(errId);
+    if (!existing) {
+      var err = document.createElement('span');
+      err.id = errId;
+      err.style.cssText = 'color:#e74c3c;font-size:0.75rem;margin-top:0.25rem;display:block';
+      err.textContent = msg;
+      el.parentNode.appendChild(err);
+    }
+  }
+
+  function clearFieldErrors(form) {
+    form.querySelectorAll('input,select,textarea').forEach(function(el) {
+      el.style.borderColor = '';
+    });
+    form.querySelectorAll('[id$="-err"]').forEach(function(el) { el.remove(); });
+  }
+
+  /* ── DEMO FORM SUBMIT ── */
+  function submitForm(e) {
+    e.preventDefault();
+    var form = e.target;
+    clearFieldErrors(form);
+    var ok = true;
+
+    var name = sanitize(document.getElementById('f-name').value);
+    var phone = document.getElementById('f-phone').value;
+    var course = document.getElementById('f-course').value;
+
+    if (!name || name.length < 2) {
+      showFieldError('f-name', 'Please enter your full name'); ok = false;
+    }
+    if (!isValidPhone(phone)) {
+      showFieldError('f-phone', 'Enter a valid 10-digit mobile number'); ok = false;
+    }
+    if (!course) {
+      showFieldError('f-course', 'Please select a course'); ok = false;
+    }
+
+    var email = document.getElementById('f-email').value;
+    if (email && !isValidEmail(email)) {
+      showFieldError('f-email', 'Enter a valid email address'); ok = false;
+    }
+
+    if (!ok) return;
+    showToast('🎸 Demo booked! We\'ll call you within 24 hours.');
+    form.reset();
+  }
+  window.submitForm = submitForm;
+
+  /* ── CONTACT FORM SUBMIT ── */
+  function submitContact(e) {
+    e.preventDefault();
+    var form = e.target;
+    clearFieldErrors(form);
+    var ok = true;
+
+    var name = sanitize(document.getElementById('c-name').value);
+    var phone = document.getElementById('c-phone').value;
+    var msg = sanitize(document.getElementById('c-msg').value);
+
+    if (!name || name.length < 2) {
+      showFieldError('c-name', 'Please enter your name'); ok = false;
+    }
+    if (!isValidPhone(phone)) {
+      showFieldError('c-phone', 'Enter a valid 10-digit mobile number'); ok = false;
+    }
+    if (!msg || msg.length < 5) {
+      showFieldError('c-msg', 'Please enter your message'); ok = false;
+    }
+
+    var email = document.getElementById('c-email').value;
+    if (email && !isValidEmail(email)) {
+      showFieldError('c-email', 'Enter a valid email address'); ok = false;
+    }
+
+    if (!ok) return;
+    showToast('📨 Message sent! We\'ll reply soon.');
+    form.reset();
+  }
+  window.submitContact = submitContact;
+
+  /* ── TOAST ── */
+  function showToast(msg) {
+    var t = document.getElementById('toast');
+    if (!t) return;
+    t.textContent = String(msg).replace(/[<>]/g, '');
+    t.style.transform = 'translateX(-50%) translateY(0)';
+    setTimeout(function() {
+      t.style.transform = 'translateX(-50%) translateY(100px)';
+    }, 3500);
+  }
+
+  /* ── EVENT DELEGATION (replaces all inline handlers) ── */
+  document.addEventListener('DOMContentLoaded', function() {
+
+    /* Navigation via data-nav */
+    document.addEventListener('click', function(e) {
+      var el = e.target.closest('[data-nav]');
+      if (!el) return;
+      e.preventDefault();
+      var page = el.getAttribute('data-nav');
+      if (el.getAttribute('data-close-menu') === '1') closeMobile();
+      navigate(page);
+    });
+
+    /* Keyboard on data-nav elements */
+    document.addEventListener('keydown', function(e) {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      var el = e.target.closest('[data-nav]');
+      if (!el) return;
+      e.preventDefault();
+      var page = el.getAttribute('data-nav');
+      if (el.getAttribute('data-close-menu') === '1') closeMobile();
+      navigate(page);
+    });
+
+    /* FAQ accordion via data-faq */
+    document.addEventListener('click', function(e) {
+      var el = e.target.closest('[data-faq]');
+      if (!el) return;
+      var item = el.parentElement;
+      document.querySelectorAll('.faq-item.open').forEach(function(other) {
+        if (other !== item) other.classList.remove('open');
+      });
+      item.classList.toggle('open');
+    });
+
+    /* Map open via data-map-open */
+    document.addEventListener('click', function(e) {
+      var el = e.target.closest('[data-map-open]');
+      if (!el) return;
+      var url = 'https://maps.google.com/?q=Amazing+To+Learn+Guitar+Classes+Laxmi+Nagar+East+Delhi';
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+
+    /* Keyboard on map elements */
+    document.addEventListener('keydown', function(e) {
+      if (e.key !== 'Enter') return;
+      var el = e.target.closest('[data-map-open]');
+      if (!el) return;
+      var url = 'https://maps.google.com/?q=Amazing+To+Learn+Guitar+Classes+Laxmi+Nagar+East+Delhi';
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+
+    /* Forms via data-form */
+    document.querySelectorAll('form[data-form]').forEach(function(form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var type = form.getAttribute('data-form');
+        if (type === 'demo') submitForm(e);
+        else if (type === 'contact') submitContact(e);
+      });
+    });
+
+    /* Footer social icon hover via CSS class */
+    document.querySelectorAll('.footer-social-icon').forEach(function(a) {
+      a.addEventListener('mouseenter', function() { this.style.color = 'var(--gold)'; });
+      a.addEventListener('mouseleave', function() { this.style.color = 'var(--text-muted)'; });
+    });
+
+  }); /* end DOMContentLoaded */
+
+})();
 </script>
 </body>
 </html>
